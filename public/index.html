@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./img/icon.png" type="image/x-icon">
+
+    <title>My Resume</title>
+    <link rel="stylesheet" href="./style/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <!-- <i class="fa-solid fa-bars" id="menu-icon"></i> -->
+        <div id="mySidenav" class="sidenav">
+            <a href="#home" class="home">HOME</a>
+            <a href="#about" class="about">About</a>
+            <a href="#services" class="services">SERVICES</a>
+            <a href="#portfolio" class="portfolio">PORTFOLIO</a>
+            <a href="#contact" class="contact">CONTACT</a>
+        </div>
+
+        <nav class="navbar">
+            <a href="#home" class="active">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#services">SERVICES</a>
+            <a href="#portfolio">PROJECTS</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>HI,Myself</h3>
+            <h1>Somya Batham</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>Enthusiastic Front End Web Developer with a passion for crafting user-friendly and visually appealing
+                websites. Proficient in HTML, CSS, and JavaScript, with a keen eye for design and a commitment to
+                delivering exceptional user experiences. Looking for an opportunity to collaborate with creative teams
+                and bring digital visions to life.</p>
+
+            <div class="social-media">
+                <a href="mailto:bathamsomya8@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://www.instagram.com/somya_batham?igsh=cmdrZzR1MWViaHl6"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/somya-batham-b0938a247/">
+                    <i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <a onclick="handleClick()" href="./somyabatham.pdf" download class="btn">Download CV</a>
+
+        </div>
+        <div class="home-img">
+            <img src="./img/somya.png" alt="" />
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/somy.png" alt="" />
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About<span>Me</span></h2>
+            <h3>Fullstack Developer</h3>
+            <p>I am Somya Batham, an enthusiastic Front End Web Developer with a passion for crafting user-friendly and
+                visually appealing websites. I hold a Bachelor of Technology degree from RGPV with a CGPA of 8.14, and I
+                graduated from Shriram Institute of Information Technology, Gwalior in June 2024. My academic background
+                also includes strong performances in Class XII and Class X from C.B.S. Convent H.S. School, Gwalior.
+
+            </p>
+            <a href="./pages/about.html" class="btn">Read more</a>
+        </div>
+
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="headinng">My<span>Services</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>web Development</h3>
+                <p> ​Web development is the process of creating and maintaining websites and web applications.It involves a range of
+                    tasks, including designing the visual elements, programming the functionality, and managing the server-side
+                    infrastructure.1 Web development can be divided into three main types: front-end, back-end, and full-stack
+                    development.
+                </p>
+                <a href="./pages/Web-develop.html" class="btn">Read more</a>
+            </div>
+            <div class="services-box">
+                <i class="fa-solid fa-palette"></i>
+                <h3>UI/UX Designing</h3>
+                <p>UI/UX designers play a crucial role in creating exceptional user experiences for digital products and
+                    services. They are responsible for understanding user requirements, designing intuitive interfaces, and
+                    ensuring seamless interactions between users and the product.
+                </p>
+                <a href="./pages/ui-ux.html" class="btn">Read more</a>
+
+            </div>
+            <div class="services-box">
+                <i class="fa-brands fa-android"></i>
+                <h3>App Development</h3>
+                <p>Mobile applications have become an integral part of our daily lives, with the worldwide mobile applications
+                    revenue expected to reach $935.2 billion in 2023, up from $581.9 billion in 2020. More and more SMEs and
+                    startups are turning to top app developers to build applications that can help them reach new potential
+                    customers.
+                </p>
+                <a href="./pages/app-dev.html" class="btn">Read more</a>
+
+            </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest<span>Projects</span></h2>
+        <div class="portfolio-container">
+            <a href="./pages/traffic.html">
+
+                <div class="portfolio-box">
+                    <img src="./img/images.jpeg" alt="" />
+                    <div class="portfolio-layer">
+                        <h4>Traffic Light</h4>
+                        <p>A traffic light controls traffic at intersections using red (stop), yellow (caution), and
+                            green (go) signals, ensuring safety and orderly movement for vehicles and pedestrians.</p>
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </div>
+                </div>
+            </a>
+
+
+
+
+            <a href="./pages/background-color.html">
+                <div class="portfolio-box">
+                    <img src="./img/images1.jpeg" alt="" />
+                    <div class="portfolio-layer">
+                        <h4>BG Changer</h4>
+                        <p>A background changer modifies webpage backgrounds in real-time using HTML, CSS, and
+                            JavaScript, offering interactive and customizable visual experiences based on user input or
+                            predefined triggers.</p>
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="./pages/Ragistration.html">
+                <div class="portfolio-box">
+                    <img src="./img/images2.jpeg" alt="" />
+                    <div class="portfolio-layer">
+                        <h4>Ragistration Page</h4>
+                        <p>The MERN stack (MongoDB, Express.js, React.js, and Node.js) is a popular technology stack for building full-stack
+                            web applications. This project aims to create a secure login and registration system using the MERN stack.</p>
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </div>
+                </div>
+            </a>
+            <a href="./pages/temperature.html">
+                <div class="portfolio-box">
+                    <img src="./img/images3.jpeg" alt="" />
+                    <div class="portfolio-layer">
+                        <h4>temperature Converter</h4>
+                        <p>Temperature conversion is the process of changing the value of a temperature measurement from one unit to
+                            another.</p>
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </div>
+                </div>
+            </a>
+            <a href="./pages/timecounter.html">
+                <div class="portfolio-box">
+                    <img src="./img/images4.jpeg" alt="" />
+                    <div class="portfolio-layer">
+                        <h4>Timer Watch</h4>
+                        <p>Add event listeners to the start, stop, and reset buttons to trigger functions when the buttons are
+                            clicked.</p>
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </div>
+                </div>
+            </a>
+            <a href="./pages/wordcounter.html">
+                <div class="portfolio-box">
+                    <img src="./img/images5.jpeg" alt="" />
+                    <div class="portfolio-layer">
+                        <h4>Word Counter</h4>
+                        <p>The Word Counter project is a versatile and user-friendly web application that combines HTML, CSS, and JavaScript
+                            to enhance the writing experience.</p>
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact<span>Me</span></h2>
+        <form action="/sendemail" method="post">
+            <div class="input-box">
+                <label for="fullName"></label>
+                <input autocomplete="off" type="text" id="fullName" placeholder="Full Name" name="fullName" required>
+
+                <label for="to"></label>
+
+                <input autocomplete="off" type="email" id="emailAddress" name="emailAddress" placeholder="Email Address"
+                    required>
+
+            </div>
+            <div class="input-box">
+                <label for="phone"></label>
+
+                <input type="tel" id="mobileNumber" name="phone" placeholder="Mobile Number" required>
+
+                <label for="subject"></label>
+
+                <input type="text" name="subject" id="emailSubject" placeholder="Email Subject" required>
+
+            </div>
+            <label for="body"></label>
+
+            <textarea id="message" name="body" cols="30" rows="10" placeholder="Your Message" required></textarea>
+
+            <input type="submit" value="send Message" class="btn">
+        </form>
+
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by @somyathecode | All Rights Reserve</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal">
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script src="js/main.js">
+    </script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const typed = new Typed('.multiple-text', {
+                strings: ['Frontend Developer', 'Web Designer'],
+                typeSpeed: 70,
+                backSpeed: 70,
+                backDelay: 1000,
+                loop: true,
+            });
+        });
+
+
+
+
+    </script>
+
+
+     <script>
+       
+        document.getElementById('emailForm').addEventListener('submit', async function(event) {
+            event.preventDefault();
+
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData.entries());
+
+            try {
+                const response = await fetch('/sendemail', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                if (response.ok) {
+                    const result = await response.json();
+                    alert(result.message); // Show success message
+                    alert("success full"); // Show success message
+                } else {
+                    const error = await response.json();
+                    alert(error.error); // Show error message
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('An unexpected error occurred.');
+            }
+        });
+    
+
+    </script> 
+
+</body>
+
+</html>
+

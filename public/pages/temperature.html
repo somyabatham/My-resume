@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature</title>
+
+    <style>
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Video styling */
+video {
+    display: block;
+    margin: 20px auto;
+    /* Add left and right margin */
+    margin-left: 20px; /* Adjust as needed */
+    margin-right: 20px; /* Adjust as needed */
+}
+
+/* Heading styling */
+h2 {
+    color: #007BFF;
+    margin: 20px 0;
+    /* Add left and right margin */
+    margin-left: 20px; /* Adjust as needed */
+    margin-right: 20px; /* Adjust as needed */
+}
+
+/* List styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Adjust list item styling */
+ul li {
+    background: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    /* Add left and right margin */
+    margin-left: 20px; /* Adjust as needed */
+    margin-right: 20px; /* Adjust as needed */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    video {
+        height: auto;
+        /* Add left and right margin for responsive view */
+        margin-left: 10px; /* Adjust as needed */
+        margin-right: 10px; /* Adjust as needed */
+    }
+
+    ul li {
+        font-size: 14px;
+        /* Add left and right margin for responsive view */
+        margin-left: 10px; /* Adjust as needed */
+        margin-right: 10px; /* Adjust as needed */
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 18px;
+        /* Add left and right margin for responsive view */
+        margin-left: 10px; /* Adjust as needed */
+        margin-right: 10px; /* Adjust as needed */
+    }
+
+    ul li {
+        font-size: 12px;
+        /* Add left and right margin for responsive view */
+        margin-left: 10px; /* Adjust as needed */
+        margin-right: 10px; /* Adjust as needed */
+    }
+
+   
+}
+p{
+        margin-left: 30px; /* Adjust as needed */
+        margin-right: 10px; /* Adjust as needed */
+    }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center; color: orange;">Temperature <span style="color: #1976d2;">Conversion</span></h1>
+
+    <video width="100%" height="685" controls>
+        <source src="../videos/temp.mp4" type="video/mp4">
+
+    </video>
+    <h2>Temperature Conversion Overview
+    </h2>
+    <ul>
+        <li>Temperature conversion is the process of changing the value of a temperature measurement from one unit to
+            another.</li>
+        <li>The most commonly used temperature scales are Celsius (°C), Fahrenheit (°F), and Kelvin (K).</li>
+        <li>Conversion between these scales is essential for various applications, such as in science, weather analysis,
+            cooking, and everyday temperature measurements.</li>
+    </ul>
+    <h2>Creating a Temperature Converter
+    </h2>
+    <ul>
+        <li>A temperature converter can be created using HTML, CSS, and JavaScript to allow users to easily convert
+            between different temperature scales.</li>
+        <li>The HTML structure typically includes input fields for each temperature scale and a display area to show the
+            converted values.</li>
+        <li>The JavaScript code handles the input-output functionality and performs the necessary calculations to
+            convert the temperatures.</li>
+        <li>The CSS styles are used to enhance the visual appearance and layout of the temperature converter.</li>
+    </ul>
+    <h2>Temperature Conversion Formulas
+    </h2>
+    <ul>
+        <li>
+            <p>To convert between Celsius and Fahrenheit, the formula is:
+            <pre>°𝐹=(°𝐶×95)+328\( °C = (°F - 32) × \frac{5}{9} \)</pre>
+            </p>
+        </li>
+        <li>
+            <p>To convert between Celsius and Kelvin, the formula is:
+            <pre>𝐾=°𝐶+273.158\( °C = K - 273.15 \)</pre>
+            </p>
+        </li>
+        <li>
+            <p>To convert between Fahrenheit and Kelvin, the formula is:
+            <pre>𝐾=(°𝐹+459.67)×598\( °F = (K - 273.15) × \frac{9}{5} + 32 \)</pre>
+            </p>
+        </li>
+    </ul>
+    <H2>Example Implementations
+    </H2>
+    <ul>
+        <li>One example implementation uses input fields for Celsius, Fahrenheit, and Kelvin, with the conversion
+            happening in real-time as the user types in a value.
+        </li>
+        <li>The JavaScript code calculates the corresponding values in the other temperature scales and updates the
+            respective input fields.
+        </li>
+        <li>Another implementation features a visually appealing design with a gradient background and a converter
+            section that displays the converted values.
+        </li>
+    </ul>
+    <h2>Advantages of a Temperature Converter
+    </h2>
+    <ul>
+        <li><span>Multiple Scale Conversion: </span>Allows users to seamlessly switch between Celsius, Fahrenheit, and
+            Kelvin, making it easier to compare temperatures across different measurement systems.</li>
+        <li><span>User-Friendly Interface:</span> Provides an intuitive design for effortless temperature input and
+            quick conversion.</li>
+        <li><span>Accuracy and Precision:</span>Ensures reliable temperature conversions for various needs by applying
+            precise mathematical algorithms.</li>
+        <li><span>Real-time Results:</span>Instantly displays the conversion outputs for reference, enhancing
+            convenience and understanding.</li>
+    </ul>
+    <h2>Practical Applications
+    </h2>
+    <ul><li>Temperature converters are useful in a wide range of applications, including:
+        <ul>
+            <li>Scientific research and experiments
+            </li>
+            <li>Weather forecasting and analysis
+            </li>
+            <li>Cooking and baking recipes
+            </li>
+            <li>Everyday temperature measurements and comparisons
+            </li>
+            <li>HVAC (Heating, Ventilation, and Air Conditioning) systems
+            </li>
+        </ul>
+    </li></ul>
+    <p>By providing a convenient and accurate way to convert between temperature scales, temperature converter tools
+        help simplify temperature-related tasks and promote better understanding of temperature data across various
+        domains.
+    </p>
+
+</body>
+
+</html>

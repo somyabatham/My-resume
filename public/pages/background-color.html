@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Changer</title>
+    <style>
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: red;
+    text-align: center;
+
+    transition: background-color 0.5s ease;
+}
+
+h1 {
+    color: brown;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px #aaa;
+}
+
+h1 span {
+    color: #1976d2;
+}
+
+h2 {
+    color: #333;
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    color: #555;
+}
+
+ul li {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    
+    color: rgb(38, 39, 37);
+}
+
+p {
+    color: rgb(38, 39, 37);
+    font-size: 1.1rem;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+#color-boxes {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.color-box {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.color-box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    ul li {
+        font-size: 1rem;
+    }
+
+    .color-box {
+        width: 40px;
+        height: 40px;
+        margin: 0 5px;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <body>
+        <h1>Background <span>Changer</span></h1>
+    
+        <video width="100%" height="auto" controls>
+            <source src="../videos/bgchanger.mp4" type="video/mp4">
+        </video>
+    
+        <h2>Background Changer Using HTML, CSS, and JavaScript</h2>
+        <ul>
+            <li>A background changer is a project that allows users to easily change the background color of a web page.</li>
+            <li>It typically features a set of color boxes that, when clicked, update the background color of the web page accordingly.</li>
+            <li>This feature makes web pages more visually appealing and interactive for users.</li>
+        </ul>
+    
+        <h2>Prerequisites</h2>
+        <ul>
+            <li>To create a background changer, one needs a basic understanding of HTML, CSS, and JavaScript.</li>
+            <li>The project consists of an HTML file to structure the web page, a CSS file to style the elements, and a JavaScript file to add functionality.</li>
+        </ul>
+    
+        <h2>HTML Structure</h2>
+        <ul>
+            <li>The HTML file sets up the basic structure of the web page, including a heading and a div element for the color boxes.</li>
+            <li>The id attribute is used to reference the color box div in the CSS and JavaScript files.</li>
+        </ul>
+    
+        <h2>CSS Styling</h2>
+        <ul>
+            <li>The CSS file is used to style the web page and the color boxes.</li>
+            <li>Properties such as color, width, height, and position are defined to create the desired appearance.</li>
+            <li>The color boxes are styled as circular elements with a cursor pointer to indicate clickability.</li>
+        </ul>
+    
+        <h2>JavaScript Functionality</h2>
+        <ul>
+            <li>The JavaScript file contains a function called `bgchange` that takes a color index as a parameter.</li>
+            <li>An array of color values is defined, and the background color of the web page is updated based on the selected color index.</li>
+            <li>An event listener is added to each color box, triggering the `bgchange` function when clicked.</li>
+        </ul>
+    
+        <h2>Output</h2>
+        <ul>
+            <li>The resulting web page displays a set of color boxes that, when clicked, change the background color of the page.</li>
+            <li>This interactive feature enhances the user experience and allows for easy customization of the web page's appearance.</li>
+        </ul>
+    
+        <p>In conclusion, creating a background changer using HTML, CSS, and JavaScript involves structuring the web page, styling the elements, and adding dynamic functionality to enable color changes. This project demonstrates the power of web development technologies in creating engaging and interactive user interfaces.</p>
+    
+        <div id="color-boxes">
+            <div class="color-box" style="background-color: red;" onclick="bgchange(0)"></div>
+            <div class="color-box" style="background-color: green;" onclick="bgchange(1)"></div>
+            <div class="color-box" style="background-color: blue;" onclick="bgchange(2)"></div>
+            <div class="color-box" style="background-color: yellow;" onclick="bgchange(3)"></div>
+        </div>
+    
+    <script>
+
+function bgchange(colorIndex) {
+    const colors = ['red', 'green', 'blue', 'yellow'];
+    document.body.style.backgroundColor = colors[colorIndex];
+}
+
+    </script>
+</body>
+
+</html>

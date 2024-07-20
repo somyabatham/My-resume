@@ -1,0 +1,282 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Light</title>
+    <style>
+        body {
+            background-color: rgb(184, 235, 235);
+        }
+
+        h1 {
+            text-align: center;
+            color: red;
+        }
+
+        div {
+            margin: 20px 40px 10px 20px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    <h1>TRAFFIC <span style="color: blue;">LIGHT</span></h1>
+    <video width="100%" height="685px" controls>
+        <source src="../videos/Traffic.mp4" type="video/mp4">
+
+    </video>
+
+    <h2>Creating a Traffic Light Using HTML, CSS, and JavaScript</h2>
+    <ul>
+        <li>A traffic light project involves creating a visual representation of a traffic light and programming it to
+            simulate the changing of the lights.
+        </li>
+        <li>The basic structure of the traffic light can be created using HTML, with each light (red, yellow, and green)
+            represented by a element.
+        </li>
+        <li>CSS is used to style the appearance of the traffic light, including the size, shape, and color of the
+            lights.
+        </li>
+        <li>​JavaScript is then used to control the logic of the traffic light, changing the opacity of the lights to
+            simulate the traffic light sequence.
+        </li>
+    </ul>
+    <h2>HTML Structure
+    </h2>
+    <ol>
+        <li>The HTML structure includes a element with the ID "isiqfor" to contain the traffic light.
+        </li>
+        <li>Inside this container, there are three eleme nts, each representing a light (red, yellow, and green).
+        </li>
+        <li> The HTML also includes a  element to link the JavaScript file. </li>
+    </ol>
+    <h2>CSS Styling
+    </h2>
+    <ul>
+        <li>The CSS styles the traffic light container and the individual lights2.
+        </li>
+        <li>The traffic light container is given a black border, padding, and a circular border-radius to create the overall appearance2.
+        </li>
+        <li>Each light is styled with a specific background color (red, yellow, or green) and a circular border-radius to create the appearance of a light bulb2.
+        </li>
+    </ul>
+
+    <h2>JavaScript Logic
+    </h2>
+    <ul>
+        <li>The JavaScript code defines a function called myFun() that controls the changing of the lights2.
+        </li>
+        <li>Inside this function, the code selects the individual light elements using their class names2.
+        </li>
+        <li>The function then sets the opacity of the lights in a specific sequence to simulate the traffic light cycle2.
+        </li>
+        <li>The initial state of the traffic light is set to have the green light turned on2.
+        </li>
+        <li>After a 3-second delay, the green light fades out, the yellow light turns on, and the red light turns on2.
+        </li>
+        <li>After another 3-second delay, the yellow light fades out, and the red light remains on2.
+        </li>
+        <li>Finally, after a third 3-second delay, the red light fades out, and the green light turns on again2.
+        </li>
+        <li>The function is then set to run continuously using setInterval() to create the ongoing traffic light cycle2.
+        </li>
+    </ul>
+
+
+</body>
+
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Light</title>
+    <style>
+        body {
+            background-color: #e0f7fa; /* Light cyan background color */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333; /* Darker text color for contrast */
+        }
+
+        h1 {
+            text-align: center;
+            color: #d32f2f; /* Dark red color for heading */
+            margin: 20px 0;
+        }
+
+        h2 {
+            color: #616161; /* Dark grey color for subheadings */
+            margin: 20px 0px 10px 20px; /* Right margin added */
+        }
+
+        ul, ol {
+            margin: 20px 20px; /* Added right margin */
+            padding: 0;
+            list-style-position: inside;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        video {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .traffic-light {
+            width: 100%;
+            /* height: 400px; */
+            max-width: 320px; /* Adjusted max-width for better responsiveness */
+            margin: 0 auto;
+            padding: 20px;
+            border: 2px solid #333; /* Darker border color */
+            border-radius: 10px;
+            background-color: #222; /* Dark background for traffic light */
+        }
+
+        .light {
+            width: 100%;
+            height: 100px;
+            margin: 10px 20px 0 5px;
+            border-radius: 50%;
+            background-color: gray;
+        }
+
+        .light.red {
+            background-color: red;
+        }
+
+        .light.yellow {
+            background-color: yellow;
+        }
+
+        .light.green {
+            background-color: green;
+        }
+
+        /* Responsive Styles */
+        @media (min-width: 1200px) {
+            .traffic-light {
+                max-width: 400px; /* Larger traffic light for very large screens */
+            }
+        }
+
+        @media (max-width: 1199px) and (min-width: 768px) {
+            .traffic-light {
+                max-width: 360px; /* Adjusted size for tablets */
+            }
+        }
+
+        @media (max-width: 767px) {
+            .traffic-light {
+                max-width: 280px; /* Smaller size for mobile screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>TRAFFIC <span style="color: #1976d2;">LIGHT</span></h1>
+    <video width="100%" height="auto" controls>
+        <source src="../videos/Traffic.mp4" type="video/mp4">
+    </video>
+
+    <h2>Creating a Traffic Light Using HTML, CSS, and JavaScript</h2>
+    <ul>
+        <li>A traffic light project involves creating a visual representation of a traffic light and programming it to simulate the changing of the lights.</li>
+        <li>The basic structure of the traffic light can be created using HTML, with each light (red, yellow, and green) represented by a <span style="color: orange;">&lt;div&gt;</span> element.</li>
+        <li>CSS is used to style the appearance of the traffic light, including the size, shape, and color of the lights.</li>
+        <li>JavaScript is then used to control the logic of the traffic light, changing the opacity of the lights to simulate the traffic light sequence.</li>
+    </ul>
+
+    <h2>HTML Structure</h2>
+    <ol>
+        <li>The HTML structure includes a <span style="color: orange;">&lt;div&gt;</span> element with the ID "traffic-light" to contain the traffic light.</li>
+        <li>Inside this container, there are three <span style="color: orange;">&lt;div&gt;</span> elements, each representing a light (red, yellow, and green).</li>
+        <li>The HTML also includes a <span style="color: orange;">&lt;script&gt;</span> element to link the JavaScript file.</li>
+    </ol>
+
+    <h2>CSS Styling</h2>
+    <ul>
+        <li>The CSS styles the traffic light container and the individual lights.</li>
+        <li>The traffic light container is given a dark background, black border, padding, and a circular border-radius to create the overall appearance.</li>
+        <li>Each light is styled with a specific background color (red, yellow, or green) and a circular border-radius to create the appearance of a light bulb.</li>
+    </ul>
+
+    <h2>JavaScript Logic</h2>
+    <ul>
+        <li>The JavaScript code defines a function called <span style="color: orange;">myFun()</span> that controls the changing of the lights.</li>
+        <li>Inside this function, the code selects the individual light elements using their class names.</li>
+        <li>The function then sets the opacity of the lights in a specific sequence to simulate the traffic light cycle.</li>
+        <li>The initial state of the traffic light is set to have the green light turned on.</li>
+        <li>After a 3-second delay, the green light fades out, the yellow light turns on, and the red light turns on.</li>
+        <li>After another 3-second delay, the yellow light fades out, and the red light remains on.</li>
+        <li>Finally, after a third 3-second delay, the red light fades out, and the green light turns on again.</li>
+        <li>The function is then set to run continuously using <span style="color: orange;">setInterval()</span> to create the ongoing traffic light cycle.</li>
+    </ul>
+
+    <div class="traffic-light">
+        <div class="light red"></div>
+        <div class="light yellow"></div>
+        <div class="light green"></div>
+    </div>
+
+</body>
+
+</html>
