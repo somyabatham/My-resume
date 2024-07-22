@@ -193,32 +193,26 @@
 
     <section class="contact" id="contact">
         <h2 class="heading">Contact<span>Me</span></h2>
-        <form action="/sendemail" method="post">
+
+        <form id="registrationForm" action="/sendemail" method="post">
             <div class="input-box">
                 <label for="fullName"></label>
                 <input autocomplete="off" type="text" id="fullName" placeholder="Full Name" name="fullName" required>
-
-                <label for="to"></label>
-
-                <input autocomplete="off" type="email" id="emailAddress" name="emailAddress" placeholder="Email Address"
-                    required>
-
+    
+                <label for="emailAddress"></label>
+                <input autocomplete="off" type="email" id="emailAddress" name="emailAddress" placeholder="Email Address" required>
             </div>
             <div class="input-box">
                 <label for="phone"></label>
-
-                <input type="tel" id="mobileNumber" name="phone" placeholder="Mobile Number" required>
-
+                <input type="tel" id="phone" name="phone" placeholder="Mobile Number" required>
+    
                 <label for="subject"></label>
-
-                <input type="text" name="subject" id="emailSubject" placeholder="Email Subject" required>
-
+                <input type="text" name="subject" id="subject" placeholder="Email Subject" required>
             </div>
             <label for="body"></label>
-
-            <textarea id="message" name="body" cols="30" rows="10" placeholder="Your Message" required></textarea>
-
-            <input type="submit" value="send Message" class="btn">
+            <textarea id="body" name="body" cols="30" rows="10" placeholder="Your Message" required></textarea>
+    
+            <input type="submit" value="Send Message" class="btn">
         </form>
 
     </section>
@@ -261,32 +255,29 @@
 
      <script>
        
-        document.getElementById('emailForm').addEventListener('submit', async function(event) {
+       document.getElementById('registrationForm').addEventListener('submit', async function(event) {
             event.preventDefault();
 
             const formData = new FormData(this);
-            const data = Object.fromEntries(formData.entries());
 
             try {
                 const response = await fetch('/sendemail', {
                     method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(data)
+                    body: formData
                 });
 
+                const result = await response.json();
+
                 if (response.ok) {
-                    const result = await response.json();
-                    alert(result.message); // Show success message
-                    alert("success full"); // Show success message
+                    alert(result.message);
+                    // Clear the form fields after successful submission
+                    this.reset();
                 } else {
-                    const error = await response.json();
-                    alert(error.error); // Show error message
+                    alert(result.error);
                 }
             } catch (error) {
-                console.error('Error:', error);
-                alert('An unexpected error occurred.');
+                alert('An error occurred while saving user data.');
+                console.error(error);
             }
         });
     
